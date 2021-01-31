@@ -33,10 +33,7 @@ $(document).ready(function () {
   CONFIG.tabs && NexT.utils.registerTabsTag();
 
   NexT.utils.embeddedVideoTransformer();
-  NexT.utils.addActiveClassToMenuItem();
-
-
-  // Define Motion Sequence.
+  NexT.utils.addActiveClassToMenuItem();// Define Motion Sequence.
   NexT.motion.integrator
     .add(NexT.motion.middleWares.logo)
     .add(NexT.motion.middleWares.menu)

@@ -110,10 +110,7 @@
         top: scrollHeight - height - offsetBottom
       })
     }
-  }
-
-
-  // AFFIX PLUGIN DEFINITION
+  }// AFFIX PLUGIN DEFINITION
   // =======================
 
   function Plugin(option) {
@@ -130,19 +127,13 @@
   var old = $.fn.affix
 
   $.fn.affix             = Plugin
-  $.fn.affix.Constructor = Affix
-
-
-  // AFFIX NO CONFLICT
+  $.fn.affix.Constructor = Affix// AFFIX NO CONFLICT
   // =================
 
   $.fn.affix.noConflict = function () {
     $.fn.affix = old
     return this
-  }
-
-
-  // AFFIX DATA-API
+  }// AFFIX DATA-API
   // ==============
 
   $(window).on('load', function () {

@@ -149,10 +149,7 @@ NexT.utils = NexT.$u = {
             position: 'absolute',
             top: '0',
             left: '0'
-          });
-
-
-        // Wrap the iframe in a new <div> which uses a dynamically fetched padding-top property
+          });      // Wrap the iframe in a new <div> which uses a dynamically fetched padding-top property
         // based on the video's w/h dimensions
         var wrap = document.createElement('div');
         wrap.className = 'fluid-vids';

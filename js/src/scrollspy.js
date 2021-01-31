@@ -75,10 +75,7 @@
       .each(function () {
         that.offsets.push(this[0])
         that.targets.push(this[1])
-      })
-
-
-  }
+      })}
 
   ScrollSpy.prototype.process = function () {
     var scrollTop    = this.$scrollElement.scrollTop() + this.options.offset
@@ -137,10 +134,7 @@
     $(this.selector)
       .parentsUntil(this.options.target, '.active')
       .removeClass('active')
-  }
-
-
-  // SCROLLSPY PLUGIN DEFINITION
+  }// SCROLLSPY PLUGIN DEFINITION
   // ===========================
 
   function Plugin(option) {
@@ -157,19 +151,13 @@
   var old = $.fn.scrollspy
 
   $.fn.scrollspy             = Plugin
-  $.fn.scrollspy.Constructor = ScrollSpy
-
-
-  // SCROLLSPY NO CONFLICT
+  $.fn.scrollspy.Constructor = ScrollSpy// SCROLLSPY NO CONFLICT
   // =====================
 
   $.fn.scrollspy.noConflict = function () {
     $.fn.scrollspy = old
     return this
-  }
-
-
-  // SCROLLSPY DATA-API
+  }// SCROLLSPY DATA-API
   // ==================
 
   $(window).on('load.bs.scrollspy.data-api', function () {

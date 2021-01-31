@@ -246,10 +246,7 @@ $(document).ready(function () {
         $.Velocity.RunSequence(sequence);
       } else {
         integrator.next();
-      }
-
-
-      function getMistLineSettings (element, translateX) {
+      }    function getMistLineSettings (element, translateX) {
         return {
           e: $(element),
           p: {translateX: translateX},
